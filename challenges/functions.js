@@ -27,7 +27,7 @@ function multiply(a, b) {
 }
 
 function greeting(name, lastName) {
-  return `Hello ${name} ${lastName}, nice to meet you `;
+  return `Hello ${name} ${lastName}, nice to meet you. `;
 }
 
 

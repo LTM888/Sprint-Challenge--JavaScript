@@ -31,7 +31,7 @@ function CuboidMaker(shell) {
 
 
 CuboidMaker.prototype.volume = function() {
-  return total = length * width * height
+  return ` my volume is ${this.length * this.width * this.height}`
 }
 
 
@@ -41,7 +41,7 @@ function Cuboid(cuboidshell) {
 
 Cuboid.prototype = Object.create(CuboidMaker.prototype);
 Cuboid.prototype.area = function() {
-  return 2 * (${this.length} * ${this.width} + ${this.length} * ${this.height}+ ${this.width }* ${this.height});
+  return `${2 * ( this.length *  this.width + this.length  * this.height  +  this.width * this.height )} `;
 }
 
 const Key = new Cuboid({

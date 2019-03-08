@@ -27,38 +27,35 @@
 // });
 // }
 
-
 // }
 
 class CubeMaker {
-    constructor(shell) {
-        this.newLength = shell.length;
-        this.newWidth = shell.width;
-        this.newHeight = shell.height;
-    }
-    volume() {
-        return `${this.newLength} * ${this.newWidth} * ${this.newHeight}`
-    }
-
+	constructor(shell) {
+		this.newLength = shell.length;
+		this.newWidth = shell.width;
+		this.newHeight = shell.height;
+	}
+	volume() {
+		return `${this.newLength} * ${this.newWidth} * ${this.newHeight}`;
+	}
 }
 
 class Cuboid extends CubeMaker {
-    constructor(cubshell) {
-        super(cubshell)
-        console.log(cubshell);
-    }
-    area() {
-        return `2 * (${this.newLength} * ${this.newWidth} + ${this.newLength} * ${this.newHeight} + ${this.newWidth} * ${this.newHeight})`;
-
-    }
+	constructor(cubshell) {
+		super(cubshell);
+		console.log(cubshell);
+	}
+	area() {
+		return `2 * (${this.newLength} * ${this.newWidth} + ${this.newLength} * ${this.newHeight} + ${this
+			.newWidth} * ${this.newHeight})`;
+	}
 }
 
 const Key = new Cuboid({
-    length: 4,
-    width: 5,
-    height: 5,
+	length: 4,
+	width: 5,
+	height: 5
 });
-
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(Key.volume()); // 100
